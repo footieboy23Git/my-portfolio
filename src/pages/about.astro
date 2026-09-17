@@ -1,8 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Button from '@/components/Button.astro';
-import { Image } from 'astro:assets';
-import profileImage from '@/assets/images/elijah.jpg';
 import { SITE } from '@/site.config';
 
 const tools = ['monday.com', 'Make', 'Figma', 'BambooHR', 'After Effects', 'InDesign', 'Photoshop', 'Workflow Automation', 'Resource Planning'];
@@ -15,11 +13,11 @@ const tools = ['monday.com', 'Make', 'Figma', 'BambooHR', 'After Effects', 'InDe
     <!-- Header & Photo Card -->
     <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-8 mb-8">
       <div class="w-32 h-32 shrink-0 sm:w-40 sm:h-40">
-        <Image 
-          src={profileImage} 
+        <img 
+          src="/images/elijah.jpg" 
           alt={SITE.name} 
-          width={400}
-          height={400}
+          width="400"
+          height="400"
           class="rounded-2xl object-cover w-full h-full border border-line shadow-sm"
         />
       </div>
