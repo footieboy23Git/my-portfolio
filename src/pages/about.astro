@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Button from '@/components/Button.astro';
+import { Image } from 'astro:assets';
+import profileImage from '@/assets/images/elijah.jpg';
 import { SITE } from '@/site.config';
 
 const tools = ['monday.com', 'Make', 'Figma', 'BambooHR', 'After Effects', 'InDesign', 'Photoshop', 'Workflow Automation', 'Resource Planning'];
@@ -10,11 +12,27 @@ const tools = ['monday.com', 'Make', 'Figma', 'BambooHR', 'After Effects', 'InDe
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
     <p class="text-ink-soft mb-6 font-mono text-xs tracking-[0.2em] uppercase">About</p>
 
-    <h1 class="font-display text-ink max-w-xl text-3xl font-medium sm:text-4xl">
-      {SITE.role}.
-    </h1>
+    <!-- Header & Photo Card -->
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-8 mb-8">
+      <div class="w-32 h-32 shrink-0 sm:w-40 sm:h-40">
+        <Image 
+          src={profileImage} 
+          alt={SITE.name} 
+          width={400}
+          height={400}
+          class="rounded-2xl object-cover w-full h-full border border-line shadow-sm"
+        />
+      </div>
+      <div>
+        <h1 class="font-display text-ink text-3xl font-medium sm:text-4xl">
+          {SITE.role}.
+        </h1>
+        <p class="text-ink-soft mt-2 text-sm font-mono">Based in London, UK</p>
+      </div>
+    </div>
 
-    <div class="prose prose-sm sm:prose-base mt-8 max-w-xl space-y-4">
+    <!-- Bio Text -->
+    <div class="prose prose-sm sm:prose-base space-y-4 text-ink-soft leading-relaxed">
       <p>
         I’m a Studio Manager with a background in creative production, workflow optimisation, and automation. Having built my career from the ground up as a designer and artworker, I understand the creative process from initial production through to final delivery.
       </p>
