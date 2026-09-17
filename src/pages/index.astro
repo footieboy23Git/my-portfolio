@@ -30,7 +30,7 @@ const selected = [...featured, ...rest].slice(0, 5);
 
     <div class="mt-8 flex flex-wrap items-center gap-3">
       <Button href="/work" variant="solid">View the work →</Button>
-      <Button href="#contact" variant="ghost">Say hello</Button>
+      <Button href="/cv" variant="ghost">View CV →</Button>
     </div>
   </section>
 
@@ -66,13 +66,12 @@ const selected = [...featured, ...rest].slice(0, 5);
   <section id="contact" class="mx-auto max-w-3xl px-6 pb-24">
     <SectionHeading eyebrow="Let's talk" />
     <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
-      Have something worth building?
+      Interested in working together or improving your studio workflows?
     </p>
-    <a
-      href={`mailto:${SITE.email}`}
-      class="text-signal mt-4 inline-flex items-center gap-2 font-mono hover:underline"
-    >
-      {SITE.email}
-    </a>
+    <div class="mt-4 flex gap-4 font-mono text-xs">
+  <a href="mailto:elijahnicholson1305@gmail.com" class="text-ink underline">elijahnicholson1305@gmail.com</a>
+  <span class="text-ink-soft">•</span>
+  <a href="https://linkedin.com/in/elijahnicholson" target="_blank" class="text-ink-soft hover:text-ink underline">LinkedIn</a>
+</div>
   </section>
 </BaseLayout>

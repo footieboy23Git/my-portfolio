@@ -1,0 +1,209 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Button from '@/components/Button.astro';
+import { SITE } from '@/site.config';
+---
+
+<BaseLayout title="CV" description={`Curriculum Vitae for ${SITE.name}`}>
+  <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
+   <!-- Header -->
+    <div class="flex flex-col gap-4 border-b border-line pb-8 sm:flex-row sm:items-center sm:justify-between">
+      <div>
+        <h1 class="font-display text-ink text-3xl font-medium sm:text-4xl">{SITE.name}</h1>
+        <p class="text-ink-soft mt-1 font-mono text-sm">
+          STUDIO MANAGER / CREATIVE OPERATIONS / WORKFLOW & AUTOMATION
+        </p>
+        <p class="text-ink-soft mt-1 text-xs">
+          London, UK • <a href="mailto:elijahnicholson1305@gmail.com" class="underline hover:text-ink">elijahnicholson1305@gmail.com</a> • <a href="https://linkedin.com/in/elijahnicholson" target="_blank" rel="noopener noreferrer" class="underline hover:text-ink">LinkedIn</a>
+        </p>
+      </div>
+      <div>
+        <Button href="/cv.pdf" target="_blank" class="text-xs">Download PDF →</Button>
+      </div>
+    </div>
+
+    <!-- Profile -->
+    <div class="mt-10">
+      <h2 class="text-ink font-display text-xl font-medium">Profile</h2>
+      <p class="text-ink-soft mt-3 text-sm leading-relaxed">
+        Studio Manager with a background in creative production, workflow optimisation and automation. Experienced in leading creative teams and designing monday.com systems that improve resource visibility, remove manual processes and connect creative and operational teams across global studios. Strong technical knowledge across Adobe Creative Cloud, Figma, motion, print and digital production.
+      </p>
+    </div>
+
+    <!-- Selected Impact -->
+    <div class="mt-10 rounded-xl border border-line p-6 bg-surface-soft">
+      <h2 class="text-ink font-display text-lg font-medium">Selected Impact</h2>
+      <ul class="text-ink-soft mt-4 grid gap-2 text-xs sm:grid-cols-2">
+        <li class="flex items-start gap-2">
+          <span class="text-ink font-bold">•</span>
+          <span><strong>80+ hrs/month saved</strong> through improved global briefing</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-ink font-bold">•</span>
+          <span><strong>99% fewer date errors</strong> across global briefing workflows</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-ink font-bold">•</span>
+          <span><strong>75+ hrs reclaimed</strong> per new hire with Figma onboarding</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-ink font-bold">•</span>
+          <span><strong>80% reduction</strong> in onboarding overhead</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-ink font-bold">•</span>
+          <span><strong>Zero data loss</strong> during global tracking system recovery</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-ink font-bold">•</span>
+          <span><strong>66 users / 1,650 holiday days</strong> automated via BambooHR/monday.com integration</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Key Skills -->
+    <div class="mt-10">
+      <h2 class="text-ink font-display text-xl font-medium">Key Skills</h2>
+      <div class="mt-4 grid gap-6 sm:grid-cols-3">
+        <div>
+          <h3 class="text-ink font-mono text-xs font-semibold uppercase tracking-wider">Creative Operations</h3>
+          <ul class="text-ink-soft mt-2 space-y-1 text-xs">
+            <li>Studio Management</li>
+            <li>Resource Planning</li>
+            <li>Workflow Design</li>
+            <li>Process Improvement</li>
+            <li>Team Leadership</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-ink font-mono text-xs font-semibold uppercase tracking-wider">Creative & Tools</h3>
+          <ul class="text-ink-soft mt-2 space-y-1 text-xs">
+            <li>Figma & Brand Governance</li>
+            <li>InDesign / Photoshop</li>
+            <li>After Effects / Motion</li>
+            <li>Print & Digital Production</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-ink font-mono text-xs font-semibold uppercase tracking-wider">Automation & Systems</h3>
+          <ul class="text-ink-soft mt-2 space-y-1 text-xs">
+            <li>monday.com & Dashboards</li>
+            <li>Make & Integrations</li>
+            <li>Workflow Automation</li>
+            <li>Capacity Management</li>
+            <li>Reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="mt-12 space-y-10">
+      <h2 class="text-ink font-display text-xl font-medium">Professional Experience</h2>
+
+      <!-- Role 1 -->
+      <div class="border-l-2 border-line pl-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h3 class="text-ink font-medium">STUDIO MANAGER | WELLCOM LONDON</h3>
+            <p class="text-ink-soft text-xs">Based at Christie's</p>
+          </div>
+          <span class="text-ink-soft font-mono text-xs">July 2022 — Present</span>
+        </div>
+        <p class="text-ink-soft mt-2 text-xs leading-relaxed">
+          Lead a creative production team supporting complex international auction campaigns, with responsibility for workflow, resource allocation, technical delivery and process improvement.
+        </p>
+        <ul class="text-ink-soft mt-3 space-y-2 text-xs leading-relaxed list-disc list-inside">
+          <li>Manage studio workload, assigning work across the team while overseeing quality, deadlines and technical delivery.</li>
+          <li>Designed and implemented interconnected monday.com workflows covering briefing, resource planning, assignment, production and handover.</li>
+          <li>Built automated OOO/capacity checks, notifications, timestamps and designer availability updates to reduce manual administration.</li>
+          <li>Created a global briefing workflow that saved 80+ hours per month in London and reduced date-formatting errors by 99%.</li>
+          <li>Built centralised resource dashboards providing live visibility of studio capacity, workload and priorities across global teams, reducing freelance reliance.</li>
+          <li>Automated holiday management for 66 users by integrating BambooHR with monday.com via Make, removing the manual entry barrier and ensuring up to 1,650 annual holiday days are automatically reflected in studio availability.</li>
+          <li>Created a global Figma onboarding framework, reducing lead onboarding time by approximately 80% and reclaiming 75+ hours per new hire.</li>
+          <li>Resolved a critical global tracking-system failure independently, restoring functionality with zero data loss.</li>
+          <li>Act as a technical and operational link between Creative, Account Management and wider stakeholders.</li>
+        </ul>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="border-l-2 border-line pl-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h3 class="text-ink font-medium">CREATIVE ARTWORKER | WELLCOM LONDON</h3>
+            <p class="text-ink-soft text-xs">Based at Christie's</p>
+          </div>
+          <span class="text-ink-soft font-mono text-xs">September 2019 — July 2022</span>
+        </div>
+        <ul class="text-ink-soft mt-3 space-y-2 text-xs leading-relaxed list-disc list-inside">
+          <li>Produced print and digital artwork for complex international auction campaigns.</li>
+          <li>Led the integration of Shorthand digital assets into the auction production pipeline.</li>
+          <li>Identified production bottlenecks and helped standardise campaign workflows, improving consistency and turnaround times.</li>
+          <li>Provided technical production support across print, digital and motion.</li>
+        </ul>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="border-l-2 border-line pl-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h3 class="text-ink font-medium">MIDWEIGHT ARTWORKER | WELLCOM LONDON</h3>
+            <p class="text-ink-soft text-xs">Based at Wellcom</p>
+          </div>
+          <span class="text-ink-soft font-mono text-xs">August 2017 — September 2019</span>
+        </div>
+        <p class="text-ink-soft mt-2 text-xs leading-relaxed">
+          Produced print and digital artwork within a high-volume studio environment, developing strong technical and production knowledge.
+        </p>
+      </div>
+
+      <!-- Role 4 -->
+      <div class="border-l-2 border-line pl-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h3 class="text-ink font-medium">JUNIOR ARTWORKER | WELLCOM LONDON</h3>
+            <p class="text-ink-soft text-xs">Based at Wellcom</p>
+          </div>
+          <span class="text-ink-soft font-mono text-xs">August 2016 — August 2017</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="mt-12">
+      <h2 class="text-ink font-display text-xl font-medium">Education</h2>
+      <div class="mt-4 space-y-4">
+        <div>
+          <div class="flex justify-between text-xs font-medium">
+            <strong class="text-ink">University of Kent (England)</strong>
+            <span class="text-ink-soft font-mono">2013 — 2017</span>
+          </div>
+          <p class="text-ink-soft text-xs mt-0.5">BSc (Hons) Multimedia Technology and Design | 2:1</p>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs font-medium">
+            <strong class="text-ink">International School of Düsseldorf (Germany)</strong>
+            <span class="text-ink-soft font-mono">2001 — 2013</span>
+          </div>
+          <p class="text-ink-soft text-xs mt-0.5">International Baccalaureate | 27 Points</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- References -->
+    <div class="mt-12 border-t border-line pt-8">
+      <h2 class="text-ink font-display text-xl font-medium">References</h2>
+      <div class="mt-4 grid gap-4 text-xs sm:grid-cols-2">
+        <div>
+          <strong class="text-ink font-medium">Christie's</strong>
+          <p class="text-ink-soft">Stuart Elwell, Senior Creative Artworker</p>
+        </div>
+        <div>
+          <strong class="text-ink font-medium">Wellcom London</strong>
+          <p class="text-ink-soft">Mark Terry, Studio Manager</p>
+        </div>
+      </div>
+      <p class="text-ink-soft mt-3 text-xs italic">Contact information available upon request.</p>
+    </div>
+  </section>
+</BaseLayout>

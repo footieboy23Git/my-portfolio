@@ -3,7 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Button from '@/components/Button.astro';
 import { SITE } from '@/site.config';
 
-const tools = ['TypeScript', 'Astro', 'React', 'Figma', 'Tailwind CSS', 'Node.js'];
+const tools = ['monday.com', 'Make', 'Figma', 'BambooHR', 'After Effects', 'InDesign', 'Photoshop', 'Workflow Automation', 'Resource Planning'];
 ---
 
 <BaseLayout title="About" description={`A bit about ${SITE.name} and how they work.`}>
@@ -14,25 +14,31 @@ const tools = ['TypeScript', 'Astro', 'React', 'Figma', 'Tailwind CSS', 'Node.js
       {SITE.role}.
     </h1>
 
-    <div class="prose prose-sm sm:prose-base mt-8 max-w-xl">
+    <div class="prose prose-sm sm:prose-base mt-8 max-w-xl space-y-4">
       <p>
-        I start most projects by trying to find the smallest version of the problem — the one
-        screen, one flow, or one fix that actually matters — and build that first, properly, before
-        expanding outward.
+        I’m a Studio Manager with a background in creative production, workflow optimisation, and automation. Having built my career from the ground up as a designer and artworker, I understand the creative process from initial production through to final delivery.
       </p>
       <p>
-        That usually means fewer features than a kickoff deck promises, and more attention to the
-        parts people interact with constantly: load times, empty states, error messages, the things
-        that quietly decide whether software feels good to use.
+        I use that hands-on experience to manage teams, improve workflows, and build systems that make creative operations more efficient and scalable. Currently at Wellcom London embedded at Christie's, I lead a team of three and oversee studio workload, resource planning, technical delivery, and process improvement.
       </p>
       <p>
-        Outside of client and product work, I maintain a couple of small open-source tools and write
-        occasional notes on what I learn building them.
+        A large part of my focus is on the space between creative and operations: designing monday.com workflows and automations, building resource dashboards, and connecting tools across teams to remove friction so creatives can focus on doing great work.
       </p>
     </div>
 
     <div class="mt-10">
-      <p class="text-ink-soft mb-3 font-mono text-xs tracking-[0.2em] uppercase">Tools</p>
+      <p class="text-ink-soft mb-4 font-mono text-xs tracking-[0.2em] uppercase">Core Focus Areas</p>
+      <ul class="text-ink-soft space-y-2 text-sm leading-relaxed">
+        <li><strong class="text-ink font-medium">Creative Operations & Workflow:</strong> End-to-end briefing, resource planning, and production handovers using monday.com and custom automations.</li>
+        <li><strong class="text-ink font-medium">Resource & Capacity Management:</strong> Single-source systems that give teams clear visibility over workload, availability, and priorities.</li>
+        <li><strong class="text-ink font-medium">Creative Systems & Governance:</strong> Global Figma frameworks that improve brand consistency, support onboarding, and enable team independence.</li>
+        <li><strong class="text-ink font-medium">Technical Production:</strong> Hands-on expertise across After Effects, InDesign, Photoshop, Figma, print, and digital asset delivery.</li>
+        <li><strong class="text-ink font-medium">Team Leadership:</strong> Managing direct reports and partnering with Account Management and Marketing to translate requirements into clear production plans.</li>
+      </ul>
+    </div>
+
+    <div class="mt-10">
+      <p class="text-ink-soft mb-3 font-mono text-xs tracking-[0.2em] uppercase">Toolkit</p>
       <ul class="flex flex-wrap gap-2">
         {
           tools.map((tool) => (
