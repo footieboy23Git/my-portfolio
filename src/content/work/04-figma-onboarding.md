@@ -11,11 +11,11 @@ tags: ["Figma", "Design Governance", "Onboarding"]
 * **75+ hours of senior capacity reclaimed** per new hire.
 
 ## Situation
-Expanding creative production into Kuala Lumpur highlighted inconsistencies in training. Existing guidance was fragmented across local documents and relied heavily on senior team members delivering repetitive one-to-one training.
+Expanding creative production into offshore/regional hubs highlighted inconsistencies in training. Existing guidance was fragmented across local documents and relied heavily on senior team members delivering repetitive one-to-one training.
 
 ## Action
 * **Interactive Environment:** Designed and built a comprehensive Global Figma onboarding resource covering artworking and image-editing processes as a self-guided training hub.
-* **Centralized Hub:** Consolidated fragmented guidance into a single resource accessible to all global teams.
+* **Centralised Hub:** Consolidated fragmented guidance into a single resource accessible to all global teams.
 * **Central Maintenance:** Structured the framework so updates could be pushed centrally rather than maintaining separate regional versions.
 
 ## Result

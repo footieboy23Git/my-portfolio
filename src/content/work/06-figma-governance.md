@@ -14,7 +14,7 @@ tags: ["Figma", "Design Governance", "Brand Systems"]
 As design files were created across multiple regions, variations in file setups, components, and export standards began to emerge. This created friction during campaign handoffs and increased the risk of brand inconsistencies.
 
 ## Action
-* **Component Library:** Standardized core Figma libraries, master templates, and file hierarchy standards.
+* **Component Library:** Standardised core Figma libraries, master templates, and file hierarchy standards.
 * **Production Guidelines:** Established global governance rules for layer naming, auto-layout usage, and asset export specifications.
 * **Self-Service Access:** Created centralized documentation allowing local and regional teams to work independently while remaining fully aligned with main studio standards.
 
